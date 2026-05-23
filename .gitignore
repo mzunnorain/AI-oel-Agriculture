@@ -1,0 +1,43 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environment ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE / OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# ── Serialised model artifacts (large binaries — regenerate with train_models.py)
+models/*.pkl
+
+# ── Dataset (regenerate with prepare_dataset.py)
+data/*.csv
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+results/app.log
+*.log
+
+# ── Keep results folder contents (metrics JSON + Word report) ────────────────
+# results/model_metrics.json  → tracked
+# results/*.docx              → tracked
+# results/*.png               → tracked (visualization screenshots)
